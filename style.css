@@ -1,0 +1,38 @@
+.bandeau-entier {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.caroussel {
+    width:640px;
+    overflow: hidden;
+}
+
+.images-caroussel {
+  width: 640px;
+  height: 360px;
+  display: flex;
+  animation-duration: 20s;
+  animation-name: defilementBandeau;
+  animation-iteration-count: infinite;
+}
+
+@keyframes defilementBandeau {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform:translateX(-640px);
+    }
+    50% {
+        transform: translateX(-1280px);
+    }
+    75% {
+        transform: translateX(-1920px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
