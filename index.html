@@ -8,19 +8,28 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body> 
- <!-- Header + navigation -->
-      <nav>
-        <div class="navbar-header">
-          <a href="/index.html" class="navbar-brand">LMY</a>
-        </div>
-       <ul class="nav justify-content-end">
-        <li class="nav-item"><a class="nav-link" href="">La Maison du Yoga</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Les cours</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Les ateliers</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Inscription</a></li>
-       </ul>
-      </nav>
+  <!-- Header + navigation -->
+    <div class="container-fluid"> 
+       <nav class="navbar navbar-expand-sm navbar-light ">
+            <a class="navbar-brand" href="index.html" >
+              <img src="logo/logo.png" alt="logo mandala" width=50 height=35 class="d-inline-block align-top"/>
+              LMY</a>
+    <!-- Bouton hamburger menu -->
+            <button class="navbar-toggler" type="button" data-bs-toogle="collapse" data-bs-target="#toogleMobileMenu" aria-controls="toogleMobileMenu" aria-expanded="false" aria-lable="Toogle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="toogleMobileMenu">
 
+              <ul class="navbar-nav ms-auto mb-2 mb-lg0">
+                <li class="nav-item"><a class="nav-link" href="#">La Maison du Yoga</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Les cours</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Les ateliers</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Inscription</a></li>
+              </ul>
+            </div>
+          </div>  
+        </nav>
   <!-- Bandeau principal -->
     <main>
       <div class="bandeau-entier">
