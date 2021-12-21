@@ -1,5 +1,11 @@
+*{
+    margin:0;
+    padding:0;
+
+}
 body{
     background-color: #fff1e6;
+    height:100%;
 }
 /* NAVBAR */
 
@@ -8,7 +14,7 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
 }
 
 .caroussel {
@@ -53,7 +59,6 @@ h1{
     flex-direction: column;
     align-items: center;
     align-content: space-around;
-    background-color: #f0ebfa;
     
 }
 
@@ -61,22 +66,64 @@ h1{
     padding: 15px;
     margin:15px;
     border-radius: 25px;
-    background-color: #e0d6f5;
+    background-color:  #ffe4cc;
 }
 .info-circle{
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     border-radius: 10px 100px / 120px;
-    background-color:#d1c2f0;
+    background-color: #ffe4cc;
     align-items: center;
     padding: 15 15 15 45;
 
 }
 
-.presentation .favorite-styled{
+.fonctionnement .favorite-styled{
    float: right;
+   padding:5px;
 }
 
 /*CODE CSS POUR ECRANS PLUS GRAND*/
 
 @media screen and (min-width : 700px) {
+ 
 }
+
+/* FOOTER */
+.footer{
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    background-color: #fff9e6;
+    padding: 15px;
+    display:grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: end;
+    grid-template-areas: 
+    "adresse inscription contact"
+    ". social .";
+}   
+
+.adresse{
+    grid-area: adresse;
+}
+
+.inscription{
+    grid-area: inscription; 
+}
+
+.social-media{
+    grid-area: social;
+}
+
+.contact{
+    grid-area:  contact;
+}
+
+.inscription .favorite-styled {
+    padding : 10px;
+}
+
 /* PAGE LES-COURS */
