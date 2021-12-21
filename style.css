@@ -146,6 +146,17 @@ h1 {
     width:auto;
     height: 150px;
     border-radius: 50%;
+    float:left;
+    margin: 0 15px 15px 0
+}
+
+.all-classes{
+    display: flex;
+    flex-direction: column;
+}
+
+.classes {
+    margin-top: 30px;
 }
 
 .favorite-styled{
@@ -153,3 +164,4 @@ h1 {
     padding:5px;
     margin-right: 15px;
 }
+
