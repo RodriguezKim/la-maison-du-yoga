@@ -142,3 +142,14 @@ h1 {
 }
 
 /* PAGE LES-COURS */
+.teacher-pic{
+    width:auto;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.favorite-styled{
+    float:right;
+    padding:5px;
+    margin-right: 15px;
+}
