@@ -1,3 +1,6 @@
+body{
+    background-color: #fff1e6;
+}
 /* NAVBAR */
 
 /* CAROUSSEL */
@@ -40,5 +43,40 @@
     }
 }
 
+/* CONTENU PRINCIPAL */
 
+h1{
+    text-align: center;
+}
+.main-content{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    background-color: #f0ebfa;
+    
+}
+
+.presentation, .fonctionnement {
+    padding: 15px;
+    margin:15px;
+    border-radius: 25px;
+    background-color: #e0d6f5;
+}
+.info-circle{
+    border-radius: 10px 100px / 120px;
+    background-color:#d1c2f0;
+    align-items: center;
+    padding: 15 15 15 45;
+
+}
+
+.presentation .favorite-styled{
+   float: right;
+}
+
+/*CODE CSS POUR ECRANS PLUS GRAND*/
+
+@media screen and (min-width : 700px) {
+}
 /* PAGE LES-COURS */
