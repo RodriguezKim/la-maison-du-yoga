@@ -8,9 +8,8 @@ body{
     height:100%;
 }
 /* NAVBAR */
-.container-fluid .navbar-brand{
+.navbar-brand{
     font-size: 4rem;
-    color: #ffcccc;
     text-shadow: 1px 1px 2px black;
 }
 
@@ -26,46 +25,8 @@ h1 {
      display:none;
  }
 }
-/* CAROUSSEL */
-.bandeau-entier {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    
-}
 
-.caroussel {
-    width:640px;
-    overflow: hidden;
-}
-
-.images-caroussel {
-  width: 640px;
-  height: 360px;
-  display: flex;
-  animation-duration: 20s;
-  animation-name: defilementBandeau;
-  animation-iteration-count: infinite;
-}
-
-@keyframes defilementBandeau {
-    0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform:translateX(-640px);
-    }
-    50% {
-        transform: translateX(-1280px);
-    }
-    75% {
-        transform: translateX(-1920px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
+/* CAROUSEL BOOTSTRAP*/
 
 /* CONTENU PRINCIPAL */
 
@@ -77,11 +38,22 @@ h1 {
     
 }
 
-.presentation, .fonctionnement {
+.img-presentation {
+    width:auto;
+    height: 300px;
+    border-radius: 50%;
+    float:left;
+    margin: 0 15px 15px 0
+}
+
+.presentation {
     padding: 15px;
     margin:15px;
-    border-radius: 25px;
-    background-color:  #ffe4cc;
+     
+}
+
+.text-presentation{
+    align-self: center;
 }
 .info-circle{
     -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
@@ -108,7 +80,8 @@ h1 {
 .footer{
     -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    background-color: #fff9e6;
+    background-color: #FDF5E6
+    ;
     padding: 15px;
     display:grid;
     grid-template-columns: 1fr auto 1fr;
@@ -137,11 +110,15 @@ h1 {
     grid-area:  contact;
 }
 
-.inscription .favorite-styled {
-    padding : 10px;
+.footer .inscription .favorite-styled {
+    padding : 15px;
 }
 
 /* PAGE LES-COURS */
+.bandeau-principal{
+    width:auto;
+    height: 100px;
+}
 .teacher-pic{
     width:auto;
     height: 150px;
