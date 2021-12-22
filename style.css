@@ -116,9 +116,14 @@ h1 {
 
 /* PAGE LES-COURS */
 .bandeau-principal{
-    width:auto;
-    height: 100px;
-}
+    background-image: url(photos-site-yoga/guerrier.jpg);
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    }
+
+
 .teacher-pic{
     width:auto;
     height: 150px;
@@ -142,3 +147,21 @@ h1 {
     margin-right: 15px;
 }
 
+/* PAGE ATELIER */
+.bandeau-atelier{
+    background-image: url(photos-site-yoga/torsions-a-deux.jpg);
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    }
+
+
+/* PAGE INCRIPTION */
+.bandeau-inscription{
+    background-image: url(photos-site-yoga/chien-tete-en-haut.jpg);
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    }
