@@ -30,6 +30,8 @@ h1 {
 
 /* CONTENU PRINCIPAL */
 
+/* PARTIE PRESENTATION */
+
 .main-content{ 
     display: flex;
     flex-direction: column;
@@ -37,37 +39,84 @@ h1 {
     align-content: space-around;
     
 }
-
-.img-presentation {
-    width:auto;
-    height: 300px;
-    border-radius: 50%;
-    float:left;
-    margin: 0 15px 15px 0
-}
-
+    
 .presentation {
+    display: flex;
     padding: 15px;
-    margin:15px;
-     
+    margin:15px;    
 }
 
 .text-presentation{
     align-self: center;
+    text-align: center;
 }
-.info-circle{
-    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    border-radius: 10px 100px / 120px;
-    background-color: #ffe4cc;
-    align-items: center;
-    padding: 15 15 15 45;
+.img-presentation {
+   width:auto;
+   height: 300px;
+   border-radius: 50%;
+   float:left;
+   margin: 0 15px 15px 0
+    }
 
+ .presentation {
+    display: flex;
+    padding: 15px;
+    margin:15px;
+         
+    }
+    
+ .text-presentation{
+    align-self: center;
+    text-align: center;
+    }
+
+ @media screen and (max-width : 700px) and (orientation:portrait){
+        .img-presentation{
+            display: none;
+        }
+    }
+       
+ /* PARTIE INFO CIRCLE */
+  
+.info-circle{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    align-content: space-between;
+}
+
+.info-circle1{
+    margin: 20px;
+    padding:20px;
+    text-align: center;
+    border: 0.1em solid black;
+    width:15em;
+    height: 15em;
+    border-radius: 100%;
+}
+
+.info-circle2{
+    margin: 20px;
+    padding:20px;
+    text-align: center;
+    border: 0.1em solid black;
+    width:15em;
+    height: 15em;
+    border-radius: 100%;
+}
+
+.fonctionnement{
+    padding: 30px;
+    background-image: url(photos-site-yoga/yoga-sunset.jpg);
+    background-size: cover;
+    background-position: bottom;
 }
 
 .fonctionnement .favorite-styled{
    float: right;
    padding:5px;
+   
 }
 
 /*CODE CSS POUR ECRANS PLUS GRAND*/
@@ -165,3 +214,5 @@ h1 {
     background-size: cover;
     background-position: center;
     }
+
+ 
