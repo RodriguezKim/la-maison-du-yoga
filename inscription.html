@@ -40,22 +40,48 @@
             </ul> 
       </nav>
   <!-- FIL D'Arianne-->
+
+
    <!-- Bandeau principal -->
    <div class="bandeau-inscription">
     <h1>Rejoignez-nous</h1>
   </div>
    <main>
-    <!-- Manque photo bandeau principal -->
    </main>
-   <div class="formulaire-full">
-       <p>
-        Merci de remplir le formulaire ci-dessous. </br>
-        Une fois complété, vous serez contacté par notre secrétariat pour finaliser votre inscription. 
-       </p>
-     <form>
+   <div class="formulaire-full">  
+        <div class="contact-wrapper">
+         <form class="form-horizontal" method="post" action="contact.php">
+           <p class="section-header">Merci de remplir le formulaire ci-dessous. </br>
+        Une fois complété, vous serez contacté par notre secrétariat pour finaliser votre inscription. </p>
+       
+            <label for="name">Nom</label>
+             <input type="text" id="name" placeholder="Nom" name="name" required>
 
-     </form>
+             <label for="firstName">Prénom</label>
+             <input type="text" id="firstName" placeholder="Prénom" name="firstName" required>
+               
+            <label for="email">Email</label>
+             <input type="email" id="email" placeholder="email@mail.com" name="email" required>
+               
+            <label for="phone">Téléphone</label>
+             <input type="tel" id="phone" placeholder="0600000000" name="phone">
+       
+            <label for="message">Message</label>
+             <textarea rows="10" id="message" placeholder="Si vous souhaitez nous préciser quelque chose, c'est ici !" name="message" required></textarea>
+       
+              <div class="advert-wrapper">
+                 <p>Souhaitez-vous recevoir notre newsletter mensuelle ?</p>
+                 <input type="radio" id="yes" name="news-question" value="yes" checked>
+                 <label for="yes">Oui</label>
+                 <input type="radio" id="no" name="news-question" value="no">
+                 <label for="no">Non</label>
+               </div>
+               <button class="send-button" id="submit" type="submit">Envoyer</button>
+             </form>
+           </div>
    </div>
+
+
   <!-- FOOTER -->     
   <footer>
     <section class="footer">
