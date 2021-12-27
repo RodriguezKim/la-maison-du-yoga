@@ -43,7 +43,6 @@ h1 {
 }
 
 /* **************************************************** CONTENU PRINCIPAL ******************************************************** */
-
 /* **************************************************** PARTIE PRESENTATION ******************************************************** */
 
 .main-content{ 
@@ -162,6 +161,7 @@ h1 {
 .fonctionnement .favorite-styled:hover{
     background-color: #fc9d9d;
 }
+
 
 /* **************************************************** CODE CSS POUR ECRANS PLUS PETIT **************************************************** */
 @media screen and (max-width : 700px) and (orientation:portrait){
