@@ -8,7 +8,7 @@ body{
     background-color: #fff1e6;
     height:100%;
 }
-/* NAVBAR */
+/* **************************************************** NAVBAR ******************************************************** */
 .navbar-brand{
     font-size: 4rem;
     text-shadow: 1px 1px 2px black;
@@ -28,7 +28,7 @@ h1 {
  }
 }
 
-/* CAROUSEL BOOTSTRAP*/
+/* **************************************************** CAROUSEL BOOTSTRAP ******************************************************** */
 
 .carousel-item {
     height: 400px; 
@@ -36,17 +36,15 @@ h1 {
    }
 .carousel-caption h5 p{
     font-size: 1.5rem;
-    /*color: beige;
-    text-shadow: 0px 0px 9px rgba(0,0,0,0.6);*/
 }
 
 .carousel-caption, h5{
     font-size: 1.8rem;
 }
 
-/* CONTENU PRINCIPAL */
+/* **************************************************** CONTENU PRINCIPAL ******************************************************** */
 
-/* PARTIE PRESENTATION */
+/* **************************************************** PARTIE PRESENTATION ******************************************************** */
 
 .main-content{ 
     display: flex;
@@ -93,7 +91,7 @@ h1 {
 
     }
 
- /* PARTIE INFO CIRCLE */
+/* **************************************************** PARTIE INFO CIRCLE ******************************************************** */
   
 .info-circle{
     display:flex;
@@ -133,7 +131,7 @@ h1 {
    
 }
 
- /* PARTIE FONCTIONNEMENT */
+/* **************************************************** PARTIE FONCTIONNEMENT ******************************************************** */
 
 .fonctionnement{
     padding: 3rem;
@@ -153,16 +151,19 @@ h1 {
    margin-right: 15px;
    margin-top: 15px;
      height: 34px;
-     width: 150px;
+     width: 200px;
      background-color: #ffcccc;
      border: none;
      border-radius: 7px;
      font: 300 14px 'Lato', sans-serif;
-     letter-spacing: 2px;
-   
+     letter-spacing: 2px;  
 }
 
-/*CODE CSS POUR ECRANS PLUS PETIT*/
+.fonctionnement .favorite-styled:hover{
+    background-color: #fc9d9d;
+}
+
+/* **************************************************** CODE CSS POUR ECRANS PLUS PETIT **************************************************** */
 @media screen and (max-width : 700px) and (orientation:portrait){
     .img-presentation{
         display: none;
@@ -209,7 +210,7 @@ h1 {
 }
 
 
-/* PAGE LES-COURS */
+/* **************************************************** PAGE LES COURS ******************************************************** */
 .bandeau-principal{
     background-image: url(photos-site-yoga/guerrier.jpg);
     max-width: 100%;
@@ -293,19 +294,42 @@ h1 {
       letter-spacing: 2px;
 }
 
+.style-yoga .favorite-styled:hover{
+    background-color:#fc9d9d; ;
+}
+
 .key-point{
     display:flex; 
     flex-direction: row;
     margin-bottom: 2rem;
     justify-content: space-around;
     padding: 3rem;
-    background-image: url(photos-site-yoga/chien-tete-en-haut-seule.jpg);
-    background-size: cover; 
-    background-position: center;
+    position: relative;
+    overflow: hidden;
 }
 
+.key-point .style-yoga {
+    padding: 15px;
+    position: relative;
+    z-index: 2;
+}
+.key-point:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 400;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url('photos-site-yoga/chien-tete-en-haut-seule.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 83%;
+    background-size: cover;
+}
 
-/*CODE CSS POUR ECRANS PLUS PETIT*/
+/* **************************************************** CODE CSS POUR ECRANS PLUS PETIT **************************************************** */
 @media screen and (max-width : 700px) and (orientation:portrait){
     .all-classes{
         display: flex;
@@ -320,7 +344,26 @@ h1 {
         margin-top:2rem;
         padding: 1rem;
         justify-content: space-around;
-    
+    }
+
+    .key-point .style-yoga {
+        padding: 15px;
+        position: relative;
+        z-index: 2;
+    }
+    .key-point:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.6;
+        background-image: url('photos-site-yoga/chien-tete-en-haut-seule.jpg');
+        background-position: center;
+        background-size: cover;
     }
     .favorite-styled{
         float:right;
@@ -341,7 +384,7 @@ h1 {
     }
     }
 
-/* PAGE ATELIER */
+/* **************************************************** PAGE ATELIER ******************************************************** */
 .bandeau-atelier{
     background-image: url(photos-site-yoga/torsions-a-deux.jpg);
     max-width: 100%;
@@ -443,7 +486,7 @@ h1 {
     vertical-align: auto;
 }
 
-/*CODE CSS POUR ECRANS PLUS PETIT*/
+/* **************************************************** CODE CSS POUR ECRANS PLUS PETIT **************************************************** */
 @media screen and (max-width : 700px) and (orientation:portrait){
     .all-atelier{
         padding:15px;
@@ -454,7 +497,7 @@ h1 {
         } 
 
 }
-/* PAGE INCRIPTION */
+/* **************************************************** PAGE INSCRIPTION ******************************************************** */
 
 .bandeau-inscription{
     background-image: url(photos-site-yoga/chien-tete-en-haut.jpg);
@@ -558,7 +601,7 @@ h1 {
       margin-top: 2rem;
     }
 
-/*CODE CSS POUR ECRANS PLUS PETIT*/
+/* **************************************************** CODE CSS POUR ECRANS PLUS PETIT **************************************************** */
 
 @media screen and (max-width : 700px) and (orientation:portrait){
     .bandeau-inscription{
@@ -644,7 +687,7 @@ h1 {
 }
 
   
- /* FOOTER */
+/* **************************************************** FOOTER ******************************************************** */
 .footer{
     position:absolute;
     width:100%;
@@ -667,9 +710,10 @@ h1 {
 .adresse{
     grid-area: adresse;
     padding:10px;
-    background-color: #d5e1db;
+    background-color: #eaecd4;
     border: none;
-    font: 300 14px 'Lato', sans-serif;
+    font: 800 14px 'Lato', sans-serif;
+    text-align: center;
     border-radius: 10%;
     letter-spacing: 2px;
     color:black;
@@ -685,12 +729,11 @@ h1 {
 
 .contact{
     padding:10px;
-    background-color: #d5e1db;
+    background-color: #eaecd4;
     border: none;
     border-radius: 10%;
-    font: 300 14px 'Lato', sans-serif;
-    letter-spacing: 2px;
-    color:black;
+    font: 600 14px 'Lato', sans-serif;
+    letter-spacing: 1px;
 }
 
 .favorite-styled {
@@ -704,6 +747,10 @@ h1 {
     border-radius: 7px;
     font: 300 14px 'Lato', sans-serif;
     letter-spacing: 2px;
+}
+
+.favorite-styled:hover{
+    background-color: #98d8b8;
 }
 
 @media screen and (max-width : 700px) and (orientation:portrait){
