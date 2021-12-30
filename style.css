@@ -31,7 +31,7 @@ h1 {
 /* **************************************************** CAROUSEL BOOTSTRAP ******************************************************** */
 
 .carousel-item {
-    height: 400px; 
+    height: 500px; 
     background-size: cover;
    }
 .carousel-caption h5 p{
@@ -40,6 +40,16 @@ h1 {
 
 .carousel-caption, h5{
     font-size: 1.8rem;
+}
+
+.img-carousel{
+    max-height: 150%;
+}
+
+@media screen and (max-width : 700px){
+    .carousel-indicators{
+        display: none;
+    }
 }
 
 /* **************************************************** CONTENU PRINCIPAL ******************************************************** */
@@ -402,7 +412,8 @@ h1 {
 }
 
 .all-atelier h4{
-    font-size: 1,3em;  
+    font-size: 1,3em; 
+    letter-spacing: 1.3px; 
 }
 
 .atelier{
@@ -422,6 +433,7 @@ h1 {
 .special-text{
     font-weight: bold;
     color: #660000;
+    margin: auto;
 }
 
 .all-atelier{
@@ -451,26 +463,45 @@ h1 {
 .content-class-1{
     grid-area: content-class-1;
     font-style: italic;
+    letter-spacing: 1.2px;
+    text-align: justify;
+    margin-right: 15px;
 }
 
 .content-class-2{
     grid-area: content-class-2;
     font-style: italic;
+    letter-spacing: 1.2px;
+    text-align: justify;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .content-class-3{
     grid-area: content-class-3;
     font-style: italic;
+    letter-spacing: 1.2px;
+    text-align: justify;
+    margin-left: 15px;
 }
 
 .when-1{
     grid-area: when-1;
+    margin-right: 15px;
 }
 .when-2{
     grid-area: when-2;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 .when-3{
     grid-area: when-3;
+    margin-left: 15px;
+}
+
+.when{
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;  
 }
 
 .favorite-styled{
@@ -496,6 +527,28 @@ h1 {
         align-items: baseline;
         } 
 
+        .teacher-pic{
+            text-align: center;
+            margin:auto;
+            display: flex;
+        }
+        .all-atelier h4{
+            font-size: 1,3em; 
+            letter-spacing: 1.3px; 
+            font-weight: bolder;
+            font-style: italic;
+        }
+
+        .all-when{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .all-when h5 br{
+            display: none;
+        }
 }
 /* **************************************************** PAGE INSCRIPTION ******************************************************** */
 
@@ -736,7 +789,7 @@ h1 {
     letter-spacing: 1px;
 }
 
-.favorite-styled {
+.favorite-styled{
     align-self: center;
     justify-self: center;  
     margin-top: 15px;
@@ -749,15 +802,19 @@ h1 {
     letter-spacing: 2px;
 }
 
-.favorite-styled:hover{
-    background-color: #98d8b8;
-}
+.favorite-styled:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #bac4bf;
+  }
+
 
 @media screen and (max-width : 700px) and (orientation:portrait){
    .contact{
-       display: none;
+       visibility: hidden;
    }
    .adresse{
-       display: none;
+       visibility: hidden;
    }
+
 }
