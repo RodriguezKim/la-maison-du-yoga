@@ -22,7 +22,7 @@ h1 {
       line-height: 400px;
     }
    
-@media screen and (max-width : 700px) {
+@media screen and (max-width : 480px)and (orientation:portrait) {
  h1{
      display:none;
  }
@@ -52,7 +52,7 @@ h1 {
     max-height: 150%;
 }
 
-@media screen and (max-width : 700px){
+@media screen and (max-width : 480px) and (orientation:portrait){
     .carousel-indicators{
         display: none;
     }
@@ -191,12 +191,12 @@ h1 {
 
 
 /* **************************************************** CODE CSS POUR ECRANS PLUS PETIT **************************************************** */
-@media screen and (max-width : 700px) and (orientation:portrait){
+@media screen and (max-width : 480px) and (orientation:portrait){
     .img-presentation{
         display: none;
     }
 }
-@media screen and (max-width : 700px) {
+@media screen and (max-width : 480px) {
  
     .text-presentation{
         margin: auto;
@@ -362,7 +362,7 @@ h1 {
 }
 
 /* **************************************************** CODE CSS POUR ECRANS PLUS PETIT **************************************************** */
-@media screen and (max-width : 700px) and (orientation:portrait){
+@media screen and (max-width : 480px) and (orientation:portrait){
     .all-classes{
         display: flex;
         flex-direction: column;
@@ -546,7 +546,7 @@ h1 {
 }
 
 /* **************************************************** CODE CSS POUR ECRANS PLUS PETIT **************************************************** */
-@media screen and (max-width : 700px) and (orientation:portrait){
+@media screen and (max-width : 480px) and (orientation:portrait){
     .all-atelier{
         padding:15px;
         margin-bottom: 20px;
@@ -684,7 +684,7 @@ h1 {
 
 /* **************************************************** CODE CSS POUR ECRANS PLUS PETIT **************************************************** */
 
-@media screen and (max-width : 700px) and (orientation:portrait){
+@media screen and (max-width : 480px) and (orientation:portrait){
     .bandeau-inscription{
         background-image: url(photos-site-yoga/chien-tete-en-haut.jpg);
         width: auto;
@@ -845,8 +845,11 @@ h1 {
   }
 
 
-@media screen and (max-width : 700px) and (orientation:portrait){
-   .contact{
+@media screen and (max-width : 480px) and (orientation:portrait){
+    .footer{
+        width: auto;
+    }
+    .contact{
        visibility: hidden;
    }
    .adresse{
