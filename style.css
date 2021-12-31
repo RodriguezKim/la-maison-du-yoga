@@ -58,12 +58,19 @@ h1 {
 }
 
 @media screen and (max-width : 700px) and (orientation:portrait){
+    #myCarousel{
+        height: 400px;
+    }
     .carousel-indicators{
         display: none;
     }
-    /*.carousel-inner{
-       
-    }*/
+    .carousel-slide{
+        height: 400px;
+    }
+
+    .carousel-inner{
+        height: 400px;
+    }
 }
 
 /* **************************************************** CONTENU PRINCIPAL ******************************************************** */
@@ -81,8 +88,8 @@ h1 {
     
 .presentation {
     display: flex;
-    padding: 15px;
-    margin:15px;    
+    flex-direction: row;
+    margin:5px;    
 }
 
 .text-presentation{
@@ -199,44 +206,62 @@ h1 {
 
 
 /* **************************************************** CODE CSS POUR ECRANS PLUS PETIT **************************************************** */
-@media screen and (max-width : 700px) and (orientation:portrait){
+/*@media screen and (max-width : 700px) and (orientation:portrait){
     .img-presentation{
         display: none;
     }
-}
+}*/
 @media screen and (max-width : 700px) and (orientation:portrait) {
  
+    .presentation{
+        margin-top: -70px;
+        display: flex;
+        flex-direction: column;
+    }
+    .img-presentation{
+        align-items: stretch;
+        justify-content: center;    
+    }
     .text-presentation{
         margin: auto;
+        justify-content: center; 
+        padding:0.8rem;   
     }
     .info-circle{
         display:flex;
         flex-direction: column;
+        align-items: stretch;
         justify-content: center;
-        align-items: baseline;
-        align-content: space-between;
-        font-size: 1.5rem;
-        font-style: italic;
         -webkit-box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
         -moz-box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
         box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
         border-radius: 20px;
-        margin: 10px;
+        margin: 15px 15px 50px 15px;
+        padding: 0.8rem;
     }
     .info-circle1{
-        /*margin: 20px;*/
-        padding:20px;
         text-align: left;
-        border:none   
+        font-size: 1.2rem;
+        border:none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        border-radius: none;
+        letter-spacing: 1.4px;
     }
     .info-circle2{
-        /*margin: 20px;*/
-        padding:20px;
-        text-align: justify;
+        text-align: left;
+        font-size: 1.2rem;
         border:none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        border-radius: none;
+        letter-spacing: 1.4px;
     }
+
     .fonctionnement{
-        padding: 3rem;
+        padding: 1.2rem;
         background-image: url(photos-site-yoga/yoga-sunset.jpg);
         background-size: cover;
         background-position: bottom;
@@ -244,8 +269,7 @@ h1 {
         color:#660000;
         font-weight:400;
         letter-spacing: 1.4px;
-    }
-    
+    }    
 }
 
 
