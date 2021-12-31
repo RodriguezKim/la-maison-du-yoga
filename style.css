@@ -224,13 +224,13 @@ h1 {
         margin: 10px;
     }
     .info-circle1{
-        margin: 20px;
+        /*margin: 20px;*/
         padding:20px;
         text-align: left;
         border:none   
     }
     .info-circle2{
-        margin: 20px;
+        /*margin: 20px;*/
         padding:20px;
         text-align: justify;
         border:none;
@@ -542,14 +542,16 @@ h1 {
 
 .favorite-styled{
     float:right;
-    padding:10px;
+    padding:5px;
     margin-right: 15px;
-    height: 44px;
+    margin-top: 15px;
+    height: 34px;
     width: 150px;
     background-color: #d5e1db;
     border: none;
     border-radius: 7px;
     font: 300 14px 'Lato', sans-serif;
+    letter-spacing: 2px;
     vertical-align: auto;
 }
 
@@ -584,6 +586,19 @@ h1 {
 
         .all-when h5 br{
             display: none;
+        }
+
+        .favorite-styled{
+            float:right;
+            padding:10px;
+            margin-right: 15px;
+            height: 44px;
+            width: 150px;
+            background-color: #d5e1db;
+            border: none;
+            border-radius: 7px;
+            font: 300 14px 'Lato', sans-serif;
+            /*vertical-align: auto;*/
         }
 }
 /* **************************************************** PAGE INSCRIPTION ******************************************************** */
@@ -854,23 +869,30 @@ h1 {
 
 
 @media screen and (max-width : 700px) and (orientation:portrait){
-    /*.footer{
-        width: auto;
-    }*/
-    .contact{
-       visibility: hidden;
-   }
-   .adresse{
-       visibility: hidden;
-   }
-   .picture-right{
-       display: none;
-   }
-   .footer{
-    grid-template-rows: 0.5fr auto 0.3fr;
-   }
+    .footer{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
 
-   .lmy{
-       margin-top: 5px;
-   }
+    .contact{
+        display:none;
+    }
+
+    .adresse{
+        display: none;
+    }
+
+    .social-media{
+        justify-self: center;
+        margin: 10px;
+    }
+
+    .inscription{
+        justify-self: center;
+    }
+
+    .lmy{
+        justify-self: center;
+    }
 }
