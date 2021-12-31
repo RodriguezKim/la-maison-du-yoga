@@ -4,10 +4,15 @@
     font-family: 'Poppins', sans-serif;
 
 }
-body{
+
+html,body{
+    width:100%;
+    overflow-x:hidden;
     background-color: #fff1e6;
     height:100%;
-}
+    }
+
+
 /* **************************************************** NAVBAR ******************************************************** */
 .navbar-brand{
     font-size: 4rem;
@@ -22,7 +27,7 @@ h1 {
       line-height: 400px;
     }
    
-@media screen and (max-width : 480px)and (orientation:portrait) {
+@media screen and (max-width : 700px)and (orientation:portrait) {
  h1{
      display:none;
  }
@@ -52,10 +57,13 @@ h1 {
     max-height: 150%;
 }
 
-@media screen and (max-width : 480px) and (orientation:portrait){
+@media screen and (max-width : 700px) and (orientation:portrait){
     .carousel-indicators{
         display: none;
     }
+    /*.carousel-inner{
+       
+    }*/
 }
 
 /* **************************************************** CONTENU PRINCIPAL ******************************************************** */
@@ -191,12 +199,12 @@ h1 {
 
 
 /* **************************************************** CODE CSS POUR ECRANS PLUS PETIT **************************************************** */
-@media screen and (max-width : 480px) and (orientation:portrait){
+@media screen and (max-width : 700px) and (orientation:portrait){
     .img-presentation{
         display: none;
     }
 }
-@media screen and (max-width : 480px) {
+@media screen and (max-width : 700px) and (orientation:portrait) {
  
     .text-presentation{
         margin: auto;
@@ -244,7 +252,7 @@ h1 {
 /* **************************************************** PAGE LES COURS ******************************************************** */
 .bandeau-principal{
     background-image: url(photos-site-yoga/guerrier.jpg);
-    max-width: 100%;
+    /*max-width: 100%;*/
     height: 400px;
     background-size: cover;
     background-position: center;
@@ -352,7 +360,7 @@ h1 {
     left: 0;
     top: 0;
     width: 100%;
-    height: 400;
+    height: 100%;
     z-index: 1;
     opacity: 0.6;
     background-image: url('photos-site-yoga/chien-tete-en-haut-seule.jpg');
@@ -362,7 +370,7 @@ h1 {
 }
 
 /* **************************************************** CODE CSS POUR ECRANS PLUS PETIT **************************************************** */
-@media screen and (max-width : 480px) and (orientation:portrait){
+@media screen and (max-width : 700px) and (orientation:portrait){
     .all-classes{
         display: flex;
         flex-direction: column;
@@ -419,7 +427,7 @@ h1 {
 /* **************************************************** PAGE ATELIER ******************************************************** */
 .bandeau-atelier{
     background-image: url(photos-site-yoga/torsions-a-deux.jpg);
-    max-width: 100%;
+    /*max-width: 100%;*/
     height: 400px;
     background-size: cover;
     background-position: center;
@@ -546,7 +554,7 @@ h1 {
 }
 
 /* **************************************************** CODE CSS POUR ECRANS PLUS PETIT **************************************************** */
-@media screen and (max-width : 480px) and (orientation:portrait){
+@media screen and (max-width : 700px) and (orientation:portrait){
     .all-atelier{
         padding:15px;
         margin-bottom: 20px;
@@ -582,7 +590,7 @@ h1 {
 
 .bandeau-inscription{
     background-image: url(photos-site-yoga/chien-tete-en-haut.jpg);
-    max-width: 100%;
+    /*max-width: 100%;*/
     height: 400px;
     background-size: cover;
     background-position: center;
@@ -684,10 +692,10 @@ h1 {
 
 /* **************************************************** CODE CSS POUR ECRANS PLUS PETIT **************************************************** */
 
-@media screen and (max-width : 480px) and (orientation:portrait){
+@media screen and (max-width : 700px) and (orientation:portrait){
     .bandeau-inscription{
         background-image: url(photos-site-yoga/chien-tete-en-haut.jpg);
-        width: auto;
+        /*width: auto;*/
         height: 400px;
         background-size: cover;
         background-position: center;
@@ -770,8 +778,8 @@ h1 {
   
 /* **************************************************** FOOTER ******************************************************** */
 .footer{
-    position:absolute;
-    width:100%;
+    /*position:absolute;
+    width:100%;*/
     -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     background-color: #FDF5E6;
@@ -845,15 +853,18 @@ h1 {
   }
 
 
-@media screen and (max-width : 480px) and (orientation:portrait){
-    .footer{
+@media screen and (max-width : 700px) and (orientation:portrait){
+    /*.footer{
         width: auto;
-    }
+    }*/
     .contact{
        visibility: hidden;
    }
    .adresse{
        visibility: hidden;
+   }
+   .picture-right{
+       display: none;
    }
    .footer{
     grid-template-rows: 0.5fr auto 0.3fr;
